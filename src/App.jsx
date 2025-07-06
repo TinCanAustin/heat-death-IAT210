@@ -5,6 +5,7 @@ import Home from './components/home_page/home';
 import Backstory from './components/backstory_page/backstory';
 import Analysis from './components/analysis_page/analysis';
 import Credits from './components/credits_page/credits';
+import Meetings from './components/meeting_page/meeting';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/story' element={<Backstory/>}/>
         <Route path='/rules' element={<h1>RULES</h1>}/>
         <Route path='/analysis' element={<Analysis/>}/>
-        <Route path='/meeting-minutes' element={<h1>MEETING MINUTES</h1>}/>
+        <Route path='/meeting-minutes' element={<Meetings/>}/>
         <Route path='/credits' element={<Credits/>}/>
       </Routes>
     </Router>
