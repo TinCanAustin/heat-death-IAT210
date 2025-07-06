@@ -12,6 +12,10 @@ function Header(){
         setOpen(!isOpen);
     }
 
+    const openPDF = ()=>{
+        window.open('/docs/rules.pdf', '_blank');
+    };
+
     return(
         <div className={`header${isOpen ? ' header-open' : ' header-closed'}`}>
             <nav className='head-cont nav'>
@@ -28,7 +32,7 @@ function Header(){
                             <li><a href="/" className='link'>HOME</a></li>
                             <li><a href="/play" className='link'>PLAY</a></li>
                             <li><a href="/story" className='link'>BACKSTORY</a></li>
-                            <li><a href="/rules" className='link'>RULES</a></li>
+                            <li><a onClick={openPDF} className='link'>RULES</a></li>
                             <li><a href="/analysis" className='link'>ANALYSIS</a></li>
                             <li><a href="/meeting-minutes" className='link'>MEETING MINUTES</a></li>
                             <li><a href="/credits" className='link'>CREDITS</a></li>
