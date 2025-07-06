@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.story{
+    margin-top: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-family: "Righteous", sans-serif;
+}
+
+.story h1{
+    font-size: 4rem;
+}
+
+.story p{
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin: 2rem 0;
+}
