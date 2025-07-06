@@ -5,11 +5,11 @@ function Credits() {
     <div className="credits-container">
       <h1 className="credits-heading">Game Created By</h1>
       <ul className="credits-list">
-        <li><strong>Jack Bradshaw</strong></li>
-        <li><strong>Nathaniel Butler</strong></li>
-        <li><strong>Han Chen</strong></li>
-        <li><strong>Austin Philip</strong></li>
-        <li><strong>Koen Stinchcombe</strong></li>
+        <li>Jack Bradshaw</li>
+        <li>Nathaniel Butler</li>
+        <li>Han Chen</li>
+        <li>Austin Philip</li>
+        <li>Koen Stinchcombe</li>
       </ul>
     </div>
   );
