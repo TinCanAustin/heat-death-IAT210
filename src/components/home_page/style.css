@@ -46,7 +46,7 @@
     text-align: center;
     margin: 3rem auto;
     width: 60%;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .desc {
@@ -60,9 +60,8 @@
 }
 
 .desc > h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   color: rgb(49, 4, 173);
-  margin-bottom: 1rem;
 }
 
 .disp {
@@ -71,14 +70,14 @@
 }
 
 .disp h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 1rem;
   color: rgb(49, 4, 173);
 }
 
 .disp p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  line-height: 1.6rem;
   font-weight: 300;
   color: #ccc;
 }
@@ -88,23 +87,39 @@
   justify-content: center;
   align-items: stretch;
   gap: 2rem;
-  flex-wrap: wrap; /* makes it responsive */
+  flex-wrap: wrap;
   max-width: 1100px;
-  margin: 1rem auto;
 }
 
 .disp2 p {
   flex: 1;
-  min-width: 250px;
+  min-width: 150px;
   max-width: 330px;
   background-color: #1a131a;
   padding: 1.5rem;
   border-radius: 12px;
-  font-size: clamp(1rem, 1.2vw + 0.5rem, 1.3rem);;
+  font-size: clamp(0.9rem, 1.1vw + 0.4rem, 1.2rem);
   font-weight: 300;
   color: #ddd;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 218, 106, 0.15);
+}
+
+.responsive-iframe-container{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    padding-top: 25%;
+}
+
+.responsive-iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1118px){
@@ -118,6 +133,25 @@
     .about p{
         margin: 3rem auto;
         width: 80%;
-        font-size: 1rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 12vw;
+    }
+
+    .intro img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .desc, .about, .disp, .disp2 {
+        padding: 0 1rem;
     }
 }

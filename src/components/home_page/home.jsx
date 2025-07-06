@@ -10,13 +10,16 @@ function Home(){
             </section>
             <section className="snap-section about">
                 <p>The End of Civilization, is a space themed war game where advanced civilization compete in survival through exploration, resource management, and combat, aiming to be the empire standing.</p>
-                <iframe width="315" height="560" 
-                    src="https://www.youtube.com/embed/STf0WfJ3iDs" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture;
-                    web-share"
-                    allowfullscreen />
+                <div className="responsive-iframe-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/STf0WfJ3iDs" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                        gyroscope; picture-in-picture;
+                        web-share"
+                        allowfullscreen 
+                    />
+                </div>
             </section>
             <section className="snap-section desc">
                 <div className='disp'>
