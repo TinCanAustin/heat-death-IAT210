@@ -12,6 +12,34 @@ import player_red from '/board/RedPlayer.png'
 import player_yellow from '/board/YellowPlayer.png'
 
 function Play(){
+    const cardImages = [
+        'Troop Card.png',
+        'STRIKER VESSEL [I].png',
+        'EXPLORATION VESSEL [I].png',
+        'BREACHING VESSEL [I].png',
+        'FORCEFIELD SPACECRAFT [II].png',
+        'MOTHER SHIP [II].png',
+        'STRIKER SPACECRAFT [II].png',
+        'A.R.G.O.N. [III].png',
+        'A.S.T.A. [III].png',
+        'Building Card.png',
+        'DYSON SPHERE.png',
+        'DRILL SITE.png',
+        'FACTORY.png',
+        'SPACE STATION.png',
+        'FORCE FIELD.png',
+        'TURRET [I].png',
+        'RAILGUN [II].png',
+        'SPACE LASER [III].png',
+        'Hazard Card.png',
+        'SOLAR FLARE.png',
+        'DRILL MAINTENANCE.png',
+        'ENERGY SURGE.png',
+        'SUPER NOVA EXPLOTION.png',
+        'METEOR SHOWER.png',
+        'WORMHOLE.png'
+    ];
+
     const openPDF = (filename) => {
         window.open(`/docs/${filename}`, '_blank');
     };
@@ -54,6 +82,21 @@ function Play(){
                     <img src={player_pink} className='click' onClick={()=>{downloadImage('PinkPlayer.png')}}/>
                     <img src={player_red} className='click' onClick={()=>{downloadImage('RedPlayer.png')}}/>
                     <img src={player_yellow} className='click' onClick={()=>{downloadImage('YellowPlayer.png')}}/>
+                </div>
+            </div>
+
+            <div className='board-hold non-board'>
+                <h1>Cards</h1>
+                <div className='cards-grid'>
+                    {cardImages.map((filename, index) => (
+                        <img
+                            key={index}
+                            src={`/board/Cards/${filename}`}
+                            alt={`Card ${index + 1}`}
+                            className='click'
+                            onClick={() => downloadImage(`Cards/${filename}`)}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
