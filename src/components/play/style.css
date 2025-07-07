@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.collection{
+    margin-top: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-select{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.board-select a{
+    cursor: pointer;
+    color: blue;
+}
+.board-select a:hover{
+    text-decoration: underline;
+}
+
+.board-hold{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    padding: 1rem;
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+
+.players-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);   
+    gap: 1rem;
+    max-width: 1400px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.players-grid img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.click:hover{
+    cursor: pointer;
+}
+.non-board{
+    margin: 2rem 0;
+}
+
+@media (max-width: 1100px) {
+    .board-select{
+        flex-direction: column;
+    }
+    .players-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+}   
