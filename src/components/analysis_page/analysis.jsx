@@ -82,9 +82,11 @@ function Analysis(){
                     <li><strong>Average Time Taken Per Turn:</strong> 1-5 minutes, depending on how much a player plans during their turn.</li>
                 </ul>
             </section>
-            
-            {/* <h1>Flowchart</h1>
-            <img src={flow}/> */}
+                        
+            <section className='flowchart'>
+                <h1>Flowchart</h1>
+                <img src={flow}/>
+            </section>
         </div>
     );
 }
