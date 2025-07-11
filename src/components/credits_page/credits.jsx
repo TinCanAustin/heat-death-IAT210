@@ -15,7 +15,7 @@ function Credits() {
             <li>Austin Philip</li>
             <li>Koen Stinchcombe</li>
         </ul>
-        <a href="#" onClick={openPDF}>Contributions</a>
+        <a href="#" onClick={openPDF} className='contri'>Contributions</a>
         </div>
     );
 }

@@ -24,3 +24,10 @@
     font-size: 1.5rem;
     line-height: 5rem;
 }
+
+.contri{
+    font-size: 2rem;
+}
+.contri:hover{
+    text-decoration: underline;
+}
